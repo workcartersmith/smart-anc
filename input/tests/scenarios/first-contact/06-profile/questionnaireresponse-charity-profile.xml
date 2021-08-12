@@ -63,12 +63,24 @@
         <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/ultrasound#performed[x]" />
         <text value="Ultrasound date" />
         <type value="dateTime" />
+        <answer>
+            <valueDateTime>
+                <value value="06/13/2018" />
+            </valueDateTime>
+        </answer>
     </item>
     <item>
         <linkId value="6" />
         <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de17#value[x]" />
         <text value="Gestational age" />
         <type value="quantity" />
+        <answer>
+            <valueQuantity>
+                <value value="40" />
+                <system value="http://unitsofmeasure.org" />
+                <code value="d" />
+            </valueQuantity>
+        </answer>
     </item>
     <item>
         <linkId value="7" />
@@ -87,18 +99,29 @@
         <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de22#value[x]" />
         <text value="Expected date of delivery (EDD)" />
         <type value="dateTime" />
+        <!-- Unsure which column represents this in the mockup. -->
     </item>
     <item>
         <linkId value="9" />
         <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de24#value[x]" />
         <text value="Number of pregnancies (gravida)" />
         <type value="integer" />
+        <answer>
+            <valueInteger>
+                <value value="2" />
+            </valueInteger>
+        </answer>
     </item>
     <item>
         <linkId value="10" />
         <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de25#value[x]" />
         <text value="Number of miscarriages and/or abortions" />
         <type value="integer" />
+        <answer>
+            <valueInteger>
+                <value value="0" />
+            </valueInteger>
+        </answer>
     </item>
     <item>
         <linkId value="11" />
@@ -106,11 +129,9 @@
         <text value="Number of live births" />
         <type value="integer" />
         <answer>
-            <valueCoding>
-                <system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom" />
-                <code value="Number of live births-1" />
-                <display value="1" />
-            </valueCoding>
+            <valueInteger>
+                <value value="1" />
+            </valueInteger>
         </answer>
     </item>
     <item>
@@ -119,6 +140,11 @@
         <text value="Whether last live birth was preterm" />
         <type value="choice" />
         <answerValueSet value="http://fhir.org/guides/who/anc-cds/ValueSet/anc-b6-de28" />
+        <answer>
+            <valueCoding>
+            <!--  Is this meant to be "obstetric history", e.g number of *past* stillbirths? -->
+            </valueCoding>
+        </answer>
     </item>
     <item>
         <linkId value="13" />
@@ -126,11 +152,9 @@
         <text value="Number of stillbirths" />
         <type value="integer" />
         <answer>
-            <valueCoding>
-                <system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom" />
-                <code value="Number of stillbirths-0" />
-                <display value="0" />
-            </valueCoding>
+            <valueInteger>
+                <value value="0" />
+            </valueInteger>
         </answer>
     </item>
     <item>
@@ -138,12 +162,20 @@
         <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de32#value[x]" />
         <text value="Parity" />
         <type value="integer" />
+        <answer>
+            <!-- Have no idea what this is in the mockup either. -->
+        </answer>
     </item>
     <item>
         <linkId value="15" />
         <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de33#value[x]" />
         <text value="Number of caesarian sections" />
         <type value="integer" />
+        <answer>
+            <valueInteger>
+                <value value="0" />
+            </valueInteger>
+        </answer>
     </item>
     <item>
         <linkId value="16" />
@@ -176,6 +208,14 @@
         <text value="Allergies" />
         <type value="choice" />
         <answerValueSet value="http://fhir.org/guides/who/anc-cds/ValueSet/anc-b6-de58" />
+        <answer>
+            <!-- Potentially should be valueCodeableConcep? -->
+            <valueCoding>
+                <system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom" />
+                <code value="Allergies-None"/>
+                <display value="None" />
+            </valueCoding>
+        </answer>
     </item>
     <item>
         <linkId value="19" />
@@ -183,6 +223,13 @@
         <text value="Past surgeries" />
         <type value="choice" />
         <answerValueSet value="http://fhir.org/guides/who/anc-cds/ValueSet/anc-b6-de73" />
+        <answer>
+            <valueCoding>
+                <system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom" />
+                <code value="Past surgeries-None" />
+                <display value="None" />
+            </valueCoding>
+        </answer>
     </item>
     <item>
         <linkId value="20" />
@@ -190,12 +237,27 @@
         <text value="Existing chronic health conditions" />
         <type value="choice" />
         <answerValueSet value="http://fhir.org/guides/who/anc-cds/ValueSet/anc-b6-de83-choices-grouper" />
+        <answer>
+            <valueCoding>
+                <system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom" />
+                <code value="Existing chronic health conditions-None"/>
+                <display value="None"/>
+            </valueCoding>
+        </answer>
     </item>
     <item>
         <linkId value="21" />
         <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de99#value[x]" />
         <text value="HIV diagnosis date" />
         <type value="choice" />
+        <answer>
+            <valueCoding>
+                <!-- Not sure which column in the mockup holds an hiv diagnosis date. -->
+                <system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom" />
+                <code value="HIV diagnosis date-"/>
+                <display value=""/>
+            </valueCoding>
+        </answer>
     </item>
     <item>
         <linkId value="22" />
@@ -278,6 +340,11 @@
         <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de153#value[x]" />
         <text value="Tobacco use" />
         <type value="boolean" />
+        <answer>
+            <valueBoolean>
+                <value value="false"/>
+            </valueBoolean>
+        </answer>
     </item>
     <item>
         <linkId value="29" />
@@ -290,6 +357,11 @@
         <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de155#value[x]" />
         <text value="Exposure to second-hand smoke" />
         <type value="boolean" />
+        <answer>
+            <valueBoolean>
+                <value value="true"/>
+            </valueBoolean>
+        </answer>
     </item>
     <item>
         <linkId value="31" />
@@ -297,17 +369,36 @@
         <text value="Partner HIV status (reported)" />
         <type value="choice" />
         <answerValueSet value="http://fhir.org/guides/who/anc-cds/ValueSet/anc-b6-de156-choices-grouper" />
+        <answer>
+            <valueCoding>
+                <system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom" />
+                <code value="Partner HIV status (reported)-Don't know" />
+                <display value="Don't know" />
+            </valueCoding>
+        </answer>
     </item>
+
+    <!-- Ctrl+F "condom" in mockup only shows column "uses condoms during sex?" -->
     <item>
         <linkId value="32" />
         <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de160#value[x]" />
         <text value="Contraceptive use of male condoms" />
         <type value="boolean" />
+        <answer>
+            <valueBoolean>
+                <value value=""/>
+            </valueBoolean>
+        </answer>
     </item>
     <item>
         <linkId value="33" />
         <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de161#value[x]" />
         <text value="Contraceptive use of female condoms" />
         <type value="boolean" />
+        <answer>
+            <valueBoolean>
+                <value value=""/>
+            </valueBoolean>
+        </answer>
     </item>
 </QuestionnaireResponse>
