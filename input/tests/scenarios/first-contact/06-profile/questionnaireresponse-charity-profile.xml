@@ -13,8 +13,7 @@
 
     <item>
         <linkId value="1" />
-        <!-- TODO: Get correct structure definition -->
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc.b6." />
+        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-patient#educationLevel" />
         <text value="Highest level of education achieved" />
         <answer>
             <valueCoding>
@@ -26,8 +25,7 @@
     </item>
     <item>
         <linkId value="2" />
-        <!-- TODO: Get correct structure definition -->
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc.b6." />
+        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-patient#occupation" />
         <text value="Occupation" />
         <answer>
             <valueCoding>
@@ -39,8 +37,7 @@
     </item>
     <item>
         <linkId value="3" />
-        <!-- TODO: Get correct structure definition -->
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc.b6." />
+        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de14#value[x]" />
         <text value="Last menstrual period (LMP) date" />
         <type value="dateTime" />
         <answer>
@@ -53,8 +50,7 @@
     </item>
     <item>
         <linkId value="4" />
-        <!-- TODO: Get correct structure definition -->
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/ultrasound#performed[x]" />
+        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de15#value[x]" />
         <text value="Ultrasound done" />
         <type value="boolean" />
     </item>
