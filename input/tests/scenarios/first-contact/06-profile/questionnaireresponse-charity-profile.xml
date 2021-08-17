@@ -13,7 +13,7 @@
 
     <item>
         <linkId value="1" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-patient#educationLevel" />
+        <definition value="ANC.B6.DE1" />
         <text value="Highest level of education achieved" />
         <answer>
             <valueCoding>
@@ -25,7 +25,7 @@
     </item>
     <item>
         <linkId value="2" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-patient#occupation" />
+        <definition value="ANC.B6.DE7" />
         <text value="Occupation" />
         <answer>
             <valueCoding>
@@ -37,7 +37,7 @@
     </item>
     <item>
         <linkId value="3" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de14#value[x]" />
+        <definition value="ANC.B6.DE14" />
         <text value="Last menstrual period (LMP) date" />
         <type value="dateTime" />
         <answer>
@@ -50,7 +50,7 @@
     </item>
     <item>
         <linkId value="4" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de15#value[x]" />
+        <definition value="ANC.B6.DE15" />
         <text value="Ultrasound done" />
         <type value="boolean" />
     </item>
@@ -67,7 +67,7 @@
     </item>
     <item>
         <linkId value="6" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de17#value[x]" />
+        <definition value="ANC.B6.DE17" />
         <text value="Gestational age" />
         <type value="quantity" />
         <answer>
@@ -80,7 +80,7 @@
     </item>
     <item>
         <linkId value="7" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de18#value[x]" />
+        <definition value="ANC.B6.DE18" />
         <!-- Unsure which column represents this in the mockup. -->
         <text value="Source of gestational age" />
         <type value="choice" />
@@ -92,14 +92,14 @@
     </item>
     <item>
         <linkId value="8" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de22#value[x]" />
+        <definition value="" />
         <text value="Expected date of delivery (EDD)" />
         <type value="dateTime" />
         <!-- Unsure which column represents this in the mockup. -->
     </item>
     <item>
         <linkId value="9" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de24#value[x]" />
+        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de24#value[x]" /> <!-- Not in the new CodeSystem Bryn linked me. -->
         <text value="Number of pregnancies (gravida)" />
         <type value="integer" />
         <answer>
@@ -132,7 +132,7 @@
     </item>
     <item>
         <linkId value="12" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de27#value[x]" />
+        <definition value="ANC.B6.DE27" />
         <text value="Whether last live birth was preterm" />
         <type value="choice" />
         <answerValueSet value="http://fhir.org/guides/who/anc-cds/ValueSet/anc-b6-de28" />
@@ -175,7 +175,7 @@
     </item>
     <item>
         <linkId value="16" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de34#value[x]" />
+        <definition value="ANC.B6.DE34" />
         <text value="Past pregnancy complications" />
         <type value="choice" />
         <answerValueSet value="http://fhir.org/guides/who/anc-cds/ValueSet/anc-b6-de34-choices-grouper" />
@@ -189,7 +189,7 @@
     </item>
     <item>
         <linkId value="17" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de51#value[x]" />
+        <definition value="ANC.B6.DE51" />
         <text value="Substance use during past pregnancy specification" />
         <type value="choice" />
         <answerValueSet value="http://fhir.org/guides/who/anc-cds/ValueSet/anc-b6-de53" />
@@ -200,7 +200,7 @@
     </item>
     <item>
         <linkId value="18" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de57#value[x]" />
+        <definition value="ANC.B6.DE57" />
         <text value="Allergies" />
         <type value="choice" />
         <answerValueSet value="http://fhir.org/guides/who/anc-cds/ValueSet/anc-b6-de58" />
@@ -215,7 +215,7 @@
     </item>
     <item>
         <linkId value="19" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de72#value[x]" />
+        <definition value="ANC.B6.DE72" />
         <text value="Past surgeries" />
         <type value="choice" />
         <answerValueSet value="http://fhir.org/guides/who/anc-cds/ValueSet/anc-b6-de73" />
@@ -229,7 +229,7 @@
     </item>
     <item>
         <linkId value="20" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de83#value[x]" />
+        <definition value="ANC.B6.DE83" />
         <text value="Existing chronic health conditions" />
         <type value="choice" />
         <answerValueSet value="http://fhir.org/guides/who/anc-cds/ValueSet/anc-b6-de83-choices-grouper" />
@@ -257,7 +257,7 @@
     </item>
     <item>
         <linkId value="22" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de100#value[x]" />
+        <definition value="ANC.B6.DE100" />
         <text value="Tetanus toxoid-containing vaccine (TTCV) immunization history" />
         <type value="choice" />
         <answerValueSet value="http://fhir.org/guides/who/anc-cds/ValueSet/anc-b6-de100-choices-grouper" />
@@ -271,7 +271,7 @@
     </item>
     <item>
         <linkId value="23" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de105#value[x]" />
+        <definition value="ANC.B6.DE105" />
         <text value="Flu immunization history" />
         <type value="choice" />
         <answerValueSet value="http://fhir.org/guides/who/anc-cds/ValueSet/anc-b6-de105-choices-grouper" />
@@ -285,7 +285,7 @@
     </item>
     <item>
         <linkId value="24" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de109#value[x]" />
+        <definition value="ANC.B6.DE109" />
         <text value="Current medications" />
         <type value="choice" />
         <answerValueSet value="http://fhir.org/guides/who/anc-cds/ValueSet/anc-b6-de109-choices-grouper" />
@@ -299,7 +299,7 @@
     </item>
     <item>
         <linkId value="25" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de139#value[x]" />
+        <definition value="ANC.B6.DE139" />
         <text value="Daily caffeine intake" />
         <type value="choice" />
         <answerValueSet value="http://fhir.org/guides/who/anc-cds/ValueSet/anc-b6-de139-choices-grouper" />
@@ -313,7 +313,7 @@
     </item>
     <item>
         <linkId value="26" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de145#value[x]" />
+        <definition value="" />
         <text value="Clinical enquiry for alcohol and other substance use done" />
         <type value="choice" />
     </item>
@@ -333,7 +333,7 @@
     </item>
     <item>
         <linkId value="28" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de153#value[x]" />
+        <definition value="ANC.B6.DE48" />
         <text value="Tobacco use" />
         <type value="boolean" />
         <answer>
@@ -344,13 +344,13 @@
     </item>
     <item>
         <linkId value="29" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de154#value[x]" />
+        <definition value="ANC.B6.DE154" />
         <text value="Recently quit tobacco products" />
         <type value="boolean" />
     </item>
     <item>
         <linkId value="30" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de155#value[x]" />
+        <definition value="ANC.B7.DE13" />
         <text value="Exposure to second-hand smoke" />
         <type value="boolean" />
         <answer>
@@ -361,7 +361,7 @@
     </item>
     <item>
         <linkId value="31" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de156#value[x]" />
+        <definition value="ANC.B6.DE156" />
         <text value="Partner HIV status (reported)" />
         <type value="choice" />
         <answerValueSet value="http://fhir.org/guides/who/anc-cds/ValueSet/anc-b6-de156-choices-grouper" />
@@ -375,7 +375,7 @@
     </item>
     <item>
         <linkId value="32" />
-        <definition value="http://fhir.org/guides/who/anc-cds/StructureDefinition/anc-b6-de160#value[x]" />
+        <definition value="ANC.B6.DE160" />
         <text value="Contraceptive use of male condoms" />
         <type value="boolean" />
         <answer>
