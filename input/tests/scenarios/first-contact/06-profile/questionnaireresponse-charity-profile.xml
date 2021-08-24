@@ -54,10 +54,7 @@
         <text value="Ultrasound done" />
         <type value="boolean" />
         <answer>
-            <valueBoolean>
-                <value value="true"/>
-                <code value="ANC.B6.DE15"/>
-            </valueBoolean>
+            <valueBoolean value="true"/>
         </answer>
     </item>
     <item>
@@ -67,9 +64,8 @@
         <text value="Ultrasound date" />
         <type value="dateTime" />
         <answer>
-            <valueDateTime>
-                <value value="06/13/2018" />
-            </valueDateTime>
+            <valueDate value="06/13/2018" />
+            <code value="wk"/>
         </answer>
     </item>
     <item>
@@ -110,10 +106,8 @@
         <text value="Number of pregnancies (gravida)" />
         <type value="integer" />
         <answer>
-            <valueInteger>
-                <value value="2" />
-                <code value="ANC.B6.DE24"/>
-            </valueInteger>
+            <valueInteger value="2" />
+            <code value="ANC.B6.DE24"/>
         </answer>
     </item>
     <item>
@@ -122,10 +116,8 @@
         <text value="Number of miscarriages and/or abortions" />
         <type value="integer" />
         <answer>
-            <valueInteger>
-                <value value="0" />
-                <code value="ANC.B6.DE25"/>
-            </valueInteger>
+            <valueInteger value="0" />
+            <code value="ANC.B6.DE25"/>
         </answer>
     </item>
     <item>
@@ -134,10 +126,8 @@
         <text value="Number of live births" />
         <type value="integer" />
         <answer>
-            <valueInteger>
-                <value value="1" />
-                <code value="ANC.BE.DE26"/>
-            </valueInteger>
+            <valueInteger value="1" />
+            <code value="ANC.BE.DE26"/>
         </answer>
     </item>
     <item>
@@ -159,10 +149,8 @@
         <text value="Number of stillbirths" />
         <type value="integer" />
         <answer>
-            <valueInteger>
-                <value value="0" />
-                <code value="ANC.B6.DE31"/>
-            </valueInteger>
+            <valueInteger value="0" />
+            <code value="ANC.B6.DE31"/>
         </answer>
     </item>
     <item>
@@ -181,10 +169,8 @@
         <text value="Number of caesarian sections" />
         <type value="integer" />
         <answer>
-            <valueInteger>
-                <value value="0" />
-                <code value="ANC.B6.DE33"/>
-            </valueInteger>
+            <valueInteger value="0" />
+            <code value="ANC.B6.DE33"/>
         </answer>
     </item>
     <item>
@@ -350,10 +336,8 @@
         <text value="Tobacco use" />
         <type value="boolean" />
         <answer>
-            <valueBoolean>
-                <value value="false"/>
-                <code value="ANC.B6.DE153"/>
-            </valueBoolean>
+            <valueBoolean value="false"/>
+            <code value="ANC.B6.DE153"/>
         </answer>
     </item>
     <item>
@@ -394,10 +378,8 @@
         <text value="Contraceptive use of male condoms" />
         <type value="boolean" />
         <answer>
-            <valueBoolean>
-                <value value="true"/>
-                <code value="ANC.B6.DE160"/>
-            </valueBoolean>
+            <valueBoolean value="true"/>
+            <code value="ANC.B6.DE160"/>
         </answer>
     </item>
 </QuestionnaireResponse>
